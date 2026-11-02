@@ -1,0 +1,21 @@
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1180px; --gutter: 32px; --gap-columns: 24px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  --color-paper: #FCFBF8; --color-paper-2: #F8F5F0; --color-paper-3: #EFE9DD;
+  --color-ink: #1A2A44; --color-ink-2: #4A5568; --color-muted: #5E6A7D;
+  --color-rule: #E8E5E0; --color-rule-2: #D8D1C3;
+  --color-accent: #B4975A; --color-accent-hover: #A3864A; --color-accent-ink: #1A2A44; --color-accent-text: #7D6428; --color-focus: #344361;
+  --color-blue: #4F6286; --color-navy-2: #2C3E50; --color-on-navy: #E4E8EF; --color-on-navy-2: #B9C2D0; --color-focus-on-navy: #D9BF85;
+  --font-display: "Playfair Display", Georgia, ui-serif, serif; --font-body: "Open Sans", ui-sans-serif, system-ui, sans-serif; --font-outlier: "Cutive Mono", ui-monospace, monospace;
+  --radius-card: 14px; --radius-lg: 28px; --radius-pill: 999px; --rule-hair: 1px; --shadow-card: none;
+  --shadow-doc-dark: 0 26px 44px -14px rgba(8, 14, 26, 0.65); --shadow-doc-fan: 0 30px 50px -16px rgba(6, 12, 24, 0.7); --shadow-doc-light: 0 30px 50px -22px rgba(26, 42, 68, 0.45); --shadow-tier: 0 40px 60px -30px rgba(4, 8, 16, 0.7);
+  --shadow-soft: 0 28px 56px -32px rgba(26, 42, 68, 0.35); --shadow-float: 0 30px 60px -24px rgba(4, 8, 16, 0.6);
+  --tracking-display: -0.02em; --display-weight: 700; --nav-h: 72px;
+}
