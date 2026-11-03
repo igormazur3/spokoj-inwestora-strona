@@ -20,8 +20,6 @@
 <body>
 <a class="skip" href="#top">Przejdź do treści</a>
 
-<div class="top grain">
-  <div class="glow" aria-hidden="true"></div>
   <div class="nav-wrap">
     <header class="nav">
       <a href="#top" class="nav__logo" aria-label="Conselion Prawo i Podatki, początek strony">
@@ -37,11 +35,13 @@
       <a class="btn btn--sm" href="#pakiety" data-cta="scroll-pricing">Zobacz pakiety</a>
     </header>
   </div>
+<div class="top grain">
+  <div class="glow" aria-hidden="true"></div>
 
   <section class="hero container" id="top" aria-labelledby="h1">
     <div class="hero__copy">
-      <h1 id="h1">Budujesz dom? Nie płać za błędy w umowie z wykonawcą.</h1>
-      <p class="lead">Większość drogich problemów na budowie zaczyna się od źle opisanego zakresu prac i niejasnych terminów. Pokażę Ci, co ustalić przed podpisem. A gdy na budowie coś Cię zaskoczy, w kilka minut sprawdzisz, co zrobić.</p>
+      <h1 id="h1">Budujesz <span class="rot" data-rot="dom?|pensjonat?|halę?|biuro?" aria-hidden="true"><span class="rot__w">dom?</span></span><span class="visually-hidden">dom albo inny budynek dla siebie?</span><br> Nie płać za błędy w umowie z wykonawcą.</h1>
+      <p class="lead">Koszty rosną, a termin ucieka zwykle dlatego, że budowę prowadzi się w biegu, bez przygotowania. Przygotujesz się bez trudu. Pokażę Ci, co ustalić przed podpisem i co zrobić, gdy budowa Cię zaskoczy.</p>
       <div class="actions">
         <a class="btn btn--lg" href="#pakiety" data-cta="scroll-pricing">Zobacz pakiety od 149&nbsp;zł</a>
         <a class="link" href="#odcinek-1">Obejrzyj odcinek 1 za darmo</a>
@@ -52,7 +52,7 @@
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg><span><b>500+ przeanalizowanych umów</b>kancelaria od 2005 roku</span></li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="6" width="17" height="12" rx="3"/><path d="M3.5 10.5h17"/><path d="M7 15h3"/></svg><span><b>Płatności obsługuje Stripe</b>zapłacisz online</span></li>
       </ul>
-      <!-- TODO po uzyskaniu danych: (1) ocena i liczba prawdziwych opinii, tylko gdy opinie istnieją; (2) „Bezpieczne płatności" z logotypami operatora, dopiero po jego wyborze; (3) konkrety własnych inwestycji autora (ile, jakie), jeśli ma je podać. Nie wstawiać gwiazdek ani deklaracji bez pokrycia. -->
+      <!-- TODO po uzyskaniu danych: (1) ocena i liczba prawdziwych opinii, tylko gdy opinie istnieją; (2) „Bezpieczne płatności" z logotypami operatora, dopiero po jego wyborze; (3) historia pierwszej budowy autora w sekcji „Autor” czeka na akceptację brzmienia przez radcę prawnego. Nie wstawiać gwiazdek ani deklaracji bez pokrycia. -->
     </div>
 
     <div class="stage">
@@ -79,8 +79,8 @@
 
   <div class="scope container" id="cele" role="region" aria-labelledby="scope-h">
     <div class="scope__head">
-      <h2 id="scope-h">Kilka minut materiału zamiast kosztownego błędu.</h2>
-      <p class="lead">Program to zbiór krótkich materiałów: odcinków po 5 do 14 minut, checklist i kart na jedną stronę. Nie musisz przerabiać całości. Otwierasz to, czego dotyczy Twój problem, i chronisz cztery rzeczy.</p>
+      <h2 id="scope-h">Co sprawdzić, jak zapytać, co zapisać.</h2>
+      <p class="lead">Wszystko w programie służy dwóm celom: żebyś wydał jak najmniej i skończył w terminie. Nie musisz przerabiać całości. Otwierasz to, czego dotyczy Twój problem.</p>
     </div>
     <ul class="scope__stats scope__stats--goals">
       <li><b>Budżet</b><span>Zakres i cenę masz na piśmie<small>Zamiast „policzymy na końcu” i dopłaty 20% ponad budżet, o której mówi się przy każdej budowie.</small></span></li>
@@ -99,7 +99,7 @@
       <h2 id="problem-h">Gdzie inwestorzy tracą najwięcej pieniędzy.</h2>
       <p class="lead">W nagraniach opowiadam o sprawach, które prowadziłem. Trzy z nich pokazuję tutaj. Wszystkie dotyczą budowy domu i każdej dało się uniknąć, ustalając coś przed rozpoczęciem prac.</p>
     </div>
-    <ul class="rows">
+    <ul class="rows swipe" aria-label="Trzy sprawy z nagrań" tabindex="0">
       <li class="row card" data-reveal>
         <h3>„Róbcie, później się rozliczymy.”</h3>
         <p class="story">Inwestor budujący dom słyszy, że kolejny etap wymaga prac, których nie było w cenie. Nie chce zatrzymywać budowy, więc się zgadza. Po kilku tygodniach dostaje fakturę na kilkadziesiąt tysięcy złotych.</p>
@@ -117,6 +117,7 @@
       </li>
     </ul>
     <p class="thesis">Za każdym razem zabrakło tego samego: ustaleń na piśmie, zanim ruszyły prace. Pokażę Ci, jak je zrobić.</p>
+    <div class="actions after"><a class="btn btn--lg" href="#odcinek-1">Obejrzyj odcinek 1 za darmo</a><a class="link" href="#pakiety" data-cta="scroll-pricing">Zobacz pakiety od 149&nbsp;zł</a></div>
   </div>
 </section>
 
@@ -126,8 +127,10 @@
       <img src="assets/autor-portret.webp" width="1000" height="1250" loading="lazy" alt="Radca prawny Tomasz Kosoń w granatowym garniturze, w studiu nagraniowym">
     </figure>
     <div class="author__text">
-      <h2 id="autor-h">Znam budowę od strony umowy i od strony inwestora.</h2>
-      <p class="lead">Jestem radcą prawnym i partnerem zarządzającym kancelarii Conselion Prawo i Podatki we Wrocławiu. Jako prawnik zajmuję się inwestycjami. Własne też realizowałem, z powodzeniem. W programie mówię o tym, co sprawdziłem w praktyce.</p>
+      <h2 id="autor-h">Swój pierwszy dom też budowałem po godzinach.</h2>
+      <!-- [DO AKCEPTACJI] historia z rozmowy z radcą prawnym 2026-11-03; brzmienie i „setki tysięcy” do potwierdzenia przed publikacją -->
+      <p class="lead">Przyjeżdżałem na budowę po pracy, zmęczony, a wykonawcy mówili mi, co chcieli. Straciłem na tym setki tysięcy złotych. Kolejne inwestycje prowadziłem już przygotowany.</p>
+      <p>Jestem radcą prawnym i partnerem zarządzającym kancelarii Conselion Prawo i Podatki we Wrocławiu. Jako prawnik zajmuję się inwestycjami. W programie mówię o tym, co sprawdziłem w praktyce.</p>
       <ul class="stats">
         <li><b>od 2005</b><span>kancelaria radców prawnych i doradców podatkowych</span></li>
         <li><b>20 lat</b><span>doświadczenia w prawie spółek i umów</span></li>
@@ -145,12 +148,21 @@
   <div class="container">
     <div class="head">
       <h2 id="jak-h">W kilka minut wiesz, co masz zrobić.</h2>
-      <p class="lead">Program jest podzielony na małe, niezależne części. Każda sytuacja na budowie ma swój materiał, więc otwierasz tylko ten, którego potrzebujesz. Przyda się na dwa sposoby.</p>
+      <p class="lead">Każda sytuacja na budowie ma swój materiał. Bierzesz ten, na który masz czas.</p>
     </div>
-    <ul class="duo">
-      <li class="card" data-reveal><p class="duo__n">1</p><h3>Zanim zaczniesz etap</h3><p>Przed wyborem wykonawcy, podpisem umowy, przelewem czy odbiorem oglądasz jeden odcinek i bierzesz checklistę. Wiesz, o co zapytać i co sprawdzić.</p></li>
-      <li class="card" data-reveal><p class="duo__n">2</p><h3>Gdy coś Cię zaskoczy</h3><p>Wykonawca mówi, że czegoś nie było w cenie, albo grozi zejściem z budowy. Wychodzisz ze spotkania na pięć minut, otwierasz kartę reakcji i wracasz z gotowym zdaniem.</p></li>
-    </ul>
+    <div class="time" data-tabs>
+      <p class="time__q" id="time-q">Ile masz czasu?</p>
+      <div class="time__tabs" role="tablist" aria-labelledby="time-q" hidden>
+        <button type="button" role="tab" id="t-2" aria-controls="p-2" aria-selected="true">2 minuty</button>
+        <button type="button" role="tab" id="t-10" aria-controls="p-10" aria-selected="false" tabindex="-1">10 minut</button>
+        <button type="button" role="tab" id="t-20" aria-controls="p-20" aria-selected="false" tabindex="-1">20 minut</button>
+      </div>
+      <div class="time__panels">
+        <section class="time__p" id="p-2" role="tabpanel" aria-labelledby="t-2"><p class="time__t">2 minuty</p><h3>Jesteś na spotkaniu, a wykonawca mówi, że czegoś nie było w cenie.</h3><p>Wyjdź na chwilę i przeczytaj kartę reakcji K-03. Wracasz z gotowym zdaniem, a decyzję podejmujesz na piśmie.</p></section>
+        <section class="time__p" id="p-10" role="tabpanel" aria-labelledby="t-10"><p class="time__t">10 minut</p><h3>Jedziesz na odbiór dachu albo instalacji.</h3><p>W drodze posłuchaj odcinka 17 o odbiorach częściowych. Na miejscu idziesz z checklistą i wiesz, czego nie podpisywać.</p></section>
+        <section class="time__p" id="p-20" role="tabpanel" aria-labelledby="t-20"><p class="time__t">20 minut</p><h3>Wieczorem przed odbiorem domu.</h3><p>Przeczytaj rozdział <span class="nw">e-booka</span> o odbiorze, około 6 minut, i obejrzyj odcinek 18, 12 minut. Rano jedziesz z checklistą przed odbiorem domu.</p></section>
+      </div>
+    </div>
     <div class="demo">
       <div class="demo__card">
         <p class="demo__label"><span class="code">K-03</span> Roboty dodatkowe w trakcie prac</p>
@@ -169,14 +181,14 @@
       <div class="demo__side">
         <p>Tak wygląda karta reakcji. Pozostałe materiały dobierasz do sytuacji:</p>
         <ul class="ways ways--stack">
-          <li><h3>Przed etapem: odcinek</h3><p>Jeden temat w 5 do 14 minut. Posłuchasz w drodze na budowę.</p></li>
+          <li><h3>Przed etapem: odcinek</h3><p>Jeden temat w jednym nagraniu. Posłuchasz w drodze na budowę.</p></li>
           <li><h3>Przed podpisem i przelewem: checklista</h3><p>Punkt po punkcie sprawdzasz umowę, zaliczkę albo odbiór.</p></li>
           <li><h3>Gdy coś się dzieje: karta reakcji</h3><p>Jedna strona: co odpowiedzieć, czego nie robić, kiedy zadzwonić.</p></li>
           <li><h3>Po rozmowie: wzór</h3><p>Notatka z ustaleń, zgoda na roboty dodatkowe, protokół odbioru.</p></li>
         </ul>
       </div>
     </div>
-    <p class="thesis thesis--wide">Ten program nie zrobi z Ciebie kierownika budowy, projektanta ani prawnika. Masz wiedzieć, co sprawdzić, o co zapytać, co zapisać, co sfotografować i kiedy powiedzieć: stop.</p>
+    <p class="thesis thesis--wide">Masz projektanta, wykonawcę i kierownika budowy, a decyzje i tak spadają na Ciebie. Ten program nie zrobi z Ciebie żadnego z nich. Da Ci wiedzę, żebyś dopłacił jak najmniej: co sprawdzić, o co zapytać, co zapisać i kiedy powiedzieć: stop.</p>
     <div class="react card">
       <div class="react__txt">
         <h3>Osiem sytuacji, na które masz gotową odpowiedź</h3>
@@ -212,13 +224,14 @@
         <div class="bento__imgs"><img src="assets/podglad/wzor-w02.webp" width="992" height="1404" loading="lazy" alt="Wzór W-02: notatka z ustaleń z wykonawcą"><img src="assets/podglad/wzor-w03.webp" width="992" height="1404" loading="lazy" alt="Wzór W-03: zgoda na roboty dodatkowe"></div>
       </article>
     </div>
+    <div class="actions after"><a class="btn btn--lg" href="#pakiety" data-cta="scroll-pricing">Zobacz pakiety od 149&nbsp;zł</a></div>
   </div>
 </section>
 
 <section class="sec sec--dots" id="etapy" aria-labelledby="etapy-h">
   <div class="container">
     <div class="head">
-      <h2 id="etapy-h">Co zyskasz na każdym etapie budowy domu.</h2>
+      <h2 id="etapy-h">Co zyskasz na każdym etapie budowy.</h2>
       <p class="lead">Na pierwszych czterech etapach ustalasz zakres, cenę i terminy, zanim wykonawca dostanie Twoje pieniądze. Kolejne trzy przejdziesz z gotową odpowiedzią pod ręką.</p>
     </div>
     <div class="stages-group">
@@ -238,10 +251,10 @@
   <div class="container">
     <div class="head head--dark head--center">
       <h2 id="pak-h">Wybierz pakiet.</h2>
-      <p class="lead">Wykonawca prosi o 20% zaliczki i mówi: „tak się robi”. Przy domu za 800 tysięcy złotych to 160 tysięcy złotych. Jeśli nie wiesz, na co dokładnie pójdą te pieniądze, ryzykujesz ich utratę. Kompletny program kosztuje 499 zł.</p>
+      <p class="lead">Jedna robota dodatkowa przyjęta bez ceny na piśmie może skończyć się fakturą na kilkadziesiąt tysięcy złotych. O takiej sprawie opowiadam w odcinku 20. Kompletny program kosztuje 499 zł.</p>
     </div>
     <!-- TODO [DO POTWIERDZENIA]: ceny z konspektu (149 / 499 / 999 zł). Skład pakietu 1 (C-05, C-06, C-10) to propozycja. -->
-    <div class="tiers"><article class="tier"><h3>Wejście</h3><p class="price">149&nbsp;zł <span class="visually-hidden">brutto</span></p><p>Masz przed sobą jedną ważną decyzję: umowę, zaliczkę albo odbiór.</p><ul><li><span class="visually-hidden">W pakiecie: </span><span class="nw">E-book</span></li><li><span class="visually-hidden">W pakiecie: </span>3 checklisty: przed umową, przed zaliczką, przed odbiorem domu</li><li class="off"><span class="visually-hidden">Brak: </span>20 odcinków, 3 h 21 min</li><li class="off"><span class="visually-hidden">Brak: </span>Karty reakcji</li><li class="off"><span class="visually-hidden">Brak: </span>Wzory dokumentów</li><li class="off"><span class="visually-hidden">Brak: </span>Konsultacja z kancelarią, 60 min</li></ul><a class="btn btn--quiet btn--block" href="#checkout-todo" data-cta="package-1">Kupuję pakiet Wejście</a></article><article class="tier tier--main"><h3>Kompletny system</h3><p class="price">499&nbsp;zł <span class="visually-hidden">brutto</span></p><p>Polecam go, jeśli budujesz albo zaraz zaczynasz i chcesz być przygotowany na każdym etapie.</p><ul><li><span class="visually-hidden">W pakiecie: </span><span class="nw">E-book</span></li><li><span class="visually-hidden">W pakiecie: </span>16 checklist</li><li><span class="visually-hidden">W pakiecie: </span>20 odcinków, 3 h 21 min</li><li><span class="visually-hidden">W pakiecie: </span>8 kart reakcji</li><li><span class="visually-hidden">W pakiecie: </span>7 wzorów dokumentów</li><li class="off"><span class="visually-hidden">Brak: </span>Konsultacja z kancelarią, 60 min</li></ul><a class="btn  btn--block" href="#checkout-todo" data-cta="package-2">Kupuję Kompletny system</a></article><article class="tier"><h3>Premium</h3><p class="price">999&nbsp;zł <span class="visually-hidden">brutto</span></p><p>Cały program i godzina rozmowy z kancelarią o Twojej sytuacji.</p><ul><li><span class="visually-hidden">W pakiecie: </span><span class="nw">E-book</span></li><li><span class="visually-hidden">W pakiecie: </span>16 checklist</li><li><span class="visually-hidden">W pakiecie: </span>20 odcinków, 3 h 21 min</li><li><span class="visually-hidden">W pakiecie: </span>8 kart reakcji</li><li><span class="visually-hidden">W pakiecie: </span>7 wzorów dokumentów</li><li><span class="visually-hidden">W pakiecie: </span>Konsultacja z kancelarią, 60 min</li></ul><a class="btn btn--quiet btn--block" href="#checkout-todo" data-cta="package-3">Kupuję pakiet Premium</a></article></div>
+    <div class="tiers swipe" aria-label="Pakiety"><article class="tier" data-reveal><h3>Wejście</h3><p class="price">149&nbsp;zł <span class="visually-hidden">brutto</span></p><p>Masz przed sobą jedną ważną decyzję: umowę, zaliczkę albo odbiór.</p><ul><li><span class="visually-hidden">W pakiecie: </span><span class="nw">E-book</span></li><li><span class="visually-hidden">W pakiecie: </span>3 checklisty: przed umową, przed zaliczką, przed odbiorem domu</li><li class="off"><span class="visually-hidden">Brak: </span>20 odcinków, 3 h 21 min</li><li class="off"><span class="visually-hidden">Brak: </span>Karty reakcji</li><li class="off"><span class="visually-hidden">Brak: </span>Wzory dokumentów</li><li class="off"><span class="visually-hidden">Brak: </span>Konsultacja z kancelarią, 60 min</li></ul><a class="btn btn--quiet btn--block" href="#checkout-todo" data-cta="package-1">Kupuję pakiet Wejście</a></article><article class="tier tier--main" data-reveal><h3>Kompletny system</h3><p class="price">499&nbsp;zł <span class="visually-hidden">brutto</span></p><p>Polecam go, jeśli budujesz albo zaraz zaczynasz i chcesz być przygotowany na każdym etapie.</p><ul><li><span class="visually-hidden">W pakiecie: </span><span class="nw">E-book</span></li><li><span class="visually-hidden">W pakiecie: </span>16 checklist</li><li><span class="visually-hidden">W pakiecie: </span>20 odcinków, 3 h 21 min</li><li><span class="visually-hidden">W pakiecie: </span>8 kart reakcji</li><li><span class="visually-hidden">W pakiecie: </span>7 wzorów dokumentów</li><li class="off"><span class="visually-hidden">Brak: </span>Konsultacja z kancelarią, 60 min</li></ul><a class="btn  btn--block" href="#checkout-todo" data-cta="package-2">Kupuję Kompletny system</a></article><article class="tier" data-reveal><h3>Premium</h3><p class="price">999&nbsp;zł <span class="visually-hidden">brutto</span></p><p>Cały program i godzina rozmowy z kancelarią o Twojej sytuacji.</p><ul><li><span class="visually-hidden">W pakiecie: </span><span class="nw">E-book</span></li><li><span class="visually-hidden">W pakiecie: </span>16 checklist</li><li><span class="visually-hidden">W pakiecie: </span>20 odcinków, 3 h 21 min</li><li><span class="visually-hidden">W pakiecie: </span>8 kart reakcji</li><li><span class="visually-hidden">W pakiecie: </span>7 wzorów dokumentów</li><li><span class="visually-hidden">W pakiecie: </span>Konsultacja z kancelarią, 60 min</li></ul><a class="btn btn--quiet btn--block" href="#checkout-todo" data-cta="package-3">Kupuję pakiet Premium</a></article></div>
     <p class="fill" id="cta-msg" role="status" hidden>Koszyk nie jest jeszcze podłączony. Adresy zakupu uzupełnia się w pliku cta-config.js.</p>
 
     <div class="terms glass">
@@ -265,8 +278,8 @@
         <p>Nie. Odcinki 13 do 20 dotyczą budowy w toku, odbiorów i sporów, a karty reakcji przydadzą się przy najbliższej trudnej rozmowie. Najwięcej zyskasz jednak przed umową i przed budową.</p></details>
       <details><summary>Nie mam czasu na 20 odcinków.</summary>
         <p>Nie musisz ich oglądać po kolei. Odcinek trwa od 5 do 14 minut, a kartę reakcji czy checklistę przeczytasz w kilka minut. Otwierasz to, czego akurat potrzebujesz.</p></details>
-      <details><summary>Mam kierownika budowy i inspektora. Po co mi ten program?</summary>
-        <p>Oni pilnują, jak wykonano prace. Program dotyczy Twojej pozycji wobec wykonawcy: umowy, płatności, ustaleń i odbiorów. Nadzoru nie zastępuje, a oszczędzanie na nim zaliczam do najdroższych błędów (odcinek 20).</p></details>
+      <details><summary>Mam projektanta, kierownika budowy i prawnika. Czemu to wszystko ma być na mojej głowie?</summary>
+        <p>Bo to Ty płacisz za każdą decyzję. Każdy z nich odpowiada za swój kawałek: projektant za projekt, kierownik budowy za to, jak wykonano prace, prawnik za dokument, który mu pokażesz. Kto za co odpowiada, omawiam w odcinku 4. Program dotyczy Twojej pozycji wobec wykonawcy: umowy, płatności, ustaleń i odbiorów. Bez tej wiedzy dopłacasz najwięcej. Nadzoru nie zastępuje, a oszczędzanie na nim zaliczam do najdroższych błędów (odcinek 20).</p></details>
       <details><summary>Mam dobrego wykonawcę z polecenia.</summary>
         <p>Problemy zdarzają się też dobrym wykonawcom. Zwykle wynikają z braku ustaleń, a nie ze złej woli. Prawdziwy test zaczyna się, gdy coś pójdzie nie tak (odcinek 5). Zapis na piśmie chroni także dobrą współpracę.</p></details>
       <details><summary>Czy program zastąpi prawnika?</summary>
