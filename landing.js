@@ -98,34 +98,7 @@
     }, 2600);
   }
 
-  // 9. „Ile masz czasu?”: zakładki. Bez skryptu widać wszystkie trzy sytuacje.
-  document.querySelectorAll('[data-tabs]').forEach(function (box) {
-    var list = box.querySelector('[role="tablist"]');
-    var tabs = Array.prototype.slice.call(box.querySelectorAll('[role="tab"]'));
-    if (!list || !tabs.length) return;
-    list.hidden = false;
-    var select = function (t, focus) {
-      tabs.forEach(function (x) {
-        var on = x === t;
-        x.setAttribute('aria-selected', String(on));
-        x.tabIndex = on ? 0 : -1;
-        document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
-      });
-      if (focus) t.focus();
-    };
-    tabs.forEach(function (t, i) {
-      t.addEventListener('click', function () { select(t); });
-      t.addEventListener('keydown', function (e) {
-        var n = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : null;
-        if (n === null) return;
-        e.preventDefault();
-        select(tabs[(n + tabs.length) % tabs.length], true);
-      });
-    });
-    select(tabs[0]);
-  });
-
-  // 10. Pakiety na telefonie: przewijanie w bok startuje od pakietu środkowego.
+  // 9. Pakiety na telefonie: przewijanie w bok startuje od pakietu środkowego.
   var tiers = document.querySelector('.tiers');
   var main = tiers && tiers.querySelector('.tier--main');
   if (main && tiers.scrollWidth > tiers.clientWidth) {
